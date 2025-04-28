@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #d3d0d0;
+  background-color: #121224;
+  height: 100%;
+  overflow-x: hidden;
+}
+/*login styles*/
+.login-button{
+ 
+  width: 95%; 
+  max-width: 95%; 
+  color: white;  
+  transition: background-color 0.3s, color 0.3s;
+}
+.login-button:hover {
+  background-color: white; 
+  color: #100f24; 
+}
+/*navbar and sidebar styles*/
+.navprofile-img{
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  margin-bottom: 16px;
+}
+p{
+  font-size: 12px;
+}
+
+.sidenav-items{
+  cursor: pointer;
+}
+
+.navbar-items{
+  display: flex;
+  gap:25px ;
+  color: white;
+  margin-top: 5px;
+}
+.navbar-logo{
+  margin-left: 12px;
+  height: 30px;
+}
+.sidenav-icons{
+  color: #fff;
+  font-size: 1.5rem;
+}
+/*pages styles*/
+.page-container {
+  border-radius: 12px;
+  background-color: #121224;
+  min-height: 100vh;
+
+  padding: 20px;
+  margin-top: 20px;
+
+}
+.edit-profile-container{
+  border-radius: 12px;
+  background-color: rgba(42, 48, 66, 0.8);
+  min-height: 100vh;
+  padding: 26px;
+  margin: 20px;
+}
+
+.page-title {
+  color: white;
+  font-size: 1.5rem;
+}
+/* .page-card {
+  padding: 32px;
+  border-radius: 12px;
+  background-color: #2a3042;
+  color: white;
+  height: auto;
+} */
+.page-details{
+  color: white;
+  padding: 10px; 
+  background-color: rgba(143, 152, 186, 0.1);
+  font-weight: bold;
+  border-radius: 5px;
+}
+/*profile page styles*/
+.profile-img{
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  margin-bottom: 16px;
+}
+.profile-details{
+  color: white;
+  padding: 8px; 
+  background-color: rgba(143, 152, 186, 0.1);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+.edit-button {
+
+  color: white;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: white;
+  color: #100f24;
+}
+/*forget password page*/
+.forget-link{
+  font-weight: bold;
+  color: #fff;
+  font-size: 12px;
+  margin: 5px;
+}
+/*input field styles*/
+.add-employee-form{
+  background-color: #100f24;
+}
+.input-field {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 15px; */
+
+}
+
+.input-field label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); 
+}
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); 
+}
+.custom-checkbox-label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.hidden-checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  position: relative;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-checkbox::after {
+  content: "";
+  width: 6px;
+  height: 12px;
+  border: solid white; 
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  display: none;
+}
+
+.hidden-checkbox:checked + .custom-checkbox {
+  background-color: green; 
+  border-color: green; 
+}
+
+.hidden-checkbox:checked + .custom-checkbox::after {
+  display: block; 
+}
+.input-field input,
+.input-field select,.input-field textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color:#2a3042 ;
+  color: white;
+}
+
+.input-field input:focus,
+.input-field select:focus {
+  outline: none;
+  border-color: #65737E; 
+}
